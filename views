@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard (Landing Page)</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/css/style3.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav-bar">
+                <a href="#" class="logo">Hero</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-section" id="home">
+        <div class="container hero-content">
+            <h1 style="color: rgb(0, 162, 255); text-shadow: 2px 5px 8px rgb(255, 0, 0);">DASHBOARD </h1>
+            <h1 style="color: rgb(33, 32, 32);">Make a Lasting Impression</h1>
+            <p style="color: rgb(14, 0, 82);">Welcome to our professional landing page where we showcase our expertise and services.</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
+    </div>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">Service 1</div>
+                <div class="service-item">Service 2</div>
+                <div class="service-item">Service 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of passionate individuals dedicated to delivering excellence.</p>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="logout">
+        <form action="/logout" method="POST">
+            <center><button type="submit">Log Out</button></center> 
+         </form>
+    </div>
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

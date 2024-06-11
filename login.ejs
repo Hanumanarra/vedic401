@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FASHION BOOK</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>FASHION SHOP</h1>
+        <p>Log in for fashion</p>
+    </header>
+
+    <div class="container">
+        <% if (loggedOutMsg) { %>
+            <p style="color: rgb(0, 230, 0);"><%= loggedOutMsg %></p>
+        <% } %>
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <span><a href="/signup">Sign up</a></span></p>
+    </div>
+</body>
+</html>
